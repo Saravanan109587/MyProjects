@@ -1,0 +1,678 @@
+<div class="col-xs-12 col-xs-offset-5">
+        <img class="img-center col-xs-4 " src="../../assets/LatestLogo.jpg">
+
+</div>
+
+
+
+<div class="row col-xs-12">
+        <div class="col-xs-5 col-xs-offset-3">
+                <label class="">User Name:
+                        <span style="color:blue ;margin-left: 0">{{ActiveCandidate.Name}}</span>
+                </label>
+        </div>
+        <div class="col-xs-3 pull-left">
+                <button routerLink="/logIn" style="margin-top: 0px;padding-bottom:3px;margin-left: 18px" (click)=logOut(); class="btn btn-sm btn-primary logOut">Log out</button>
+        </div>
+</div>
+
+
+
+
+
+<div class="row col-xs-12">
+        <div class="col-xs-offset-1 col-xs-8">
+                <ul class="nav nav-tabs">
+                        <li class="col-xs-5" [ngClass]="{'activeLi':editcandidate==1}" (click)=setpath(1);> Add New candidate</li>
+                        <!-- <li class="" [ngClass]="{'activeLi':editcandidate==2}"  (click)=setpath(2); > Upload candidates </li>-->
+                        <li class="col-xs-5" [ngClass]="{'activeLi':editcandidate==3}" (click)=setpath(3);>Search candidates</li>
+                </ul>
+        </div>
+
+</div>
+<div class="tab-content col-xs-offset-3 col-xs-6">
+        <div id="addCandidate" class="tab-pane" [ngClass]="{'active':editcandidate==1}">
+                <div class="panel panel-warning" style="border-color: dodgerblue;border-width: 3px">
+                        <div class="panel-body">
+                                <form novalidate #candidateForm="ngForm">
+                                        <div class="col-xs-12">
+                                                <div class="col-xs-5">
+                                                        <label for="dateOf" class="cols-xs-2 FormLabel  ">Date of Interview</label>
+                                                </div>
+                                                <div class="col-xs-7">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon cols-xs-8">
+                                                                        <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
+                                                                </span>
+                                                                <input type="text" id="dateOf" bsDatepicker class="form-control width-300  " [bsConfig]="datePicketConfig" [(ngModel)]="candidateDetail.DateofInterview"
+                                                                        name="dateOf" id="dateOf" placeholder="Date of Interview"
+                                                                        required #DOI=ngModel [ngClass]="{'mandatory': DOI.touched && DOI.invalid}"
+                                                                />
+                                                                
+                                                        </div>
+                                                </div>
+                                               
+                                        </div>
+                                        <div class="col-xs-offset-7" *ngIf="DOI.touched && DOI.invalid">
+                                                        <span style="color: red">Enter Valid date of Interview</span>
+                                        </div>
+                                        <div class="col-xs-12">
+                                                <div class="col-xs-5">
+                                                        <label for="dateOfPhone" class="cols-xs-2 FormLabel  ">Date of Phone Interview</label>
+                                                </div>
+                                                <div class="col-xs-7">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon cols-xs-8">
+                                                                        <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
+                                                                </span>
+                                                                <input type="text" bsDatepicker class="form-control width-300  " [bsConfig]="datePicketConfig" [(ngModel)]="candidateDetail.DateOfPhoneIntervbiew"
+                                                                        name="dateOfPhone" id="dateOfPhone" placeholder="Date Of Phone Interview"
+                                                                        required #DOPI=ngModel [ngClass]="{'mandatory':DOPI.touched && DOPI.invalid}"
+                                                                />
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-xs-offset-7" *ngIf="DOPI.touched && DOPI.invalid">
+                                                        <span style="color: red">Enter Valid date of Phone Interview</span>
+                                        </div>
+                                        <div class="col-xs-12">
+                                                <div class="col-xs-5">
+                                                        <label for="name" class="cols-xs-2 FormLabel">Name</label>
+                                                </div>
+                                                <div class="col-xs-7">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                        <i class="fa fa-user fa" aria-hidden="true"></i>
+                                                                </span>
+                                                                <input type="text" class="form-control width-300" name="name" id="name" appEmptyStringVallidator="" [(ngModel)]=candidateDetail.Name
+                                                                        placeholder="Enter your Name" #Name=ngModel required [ngClass]="{'mandatory':Name.touched && Name.invalid}"
+                                                                />
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="col-xs-offset-7" *ngIf="Name.touched && Name.invalid">
+                                                        <span style="color: red">Enter Valid Name</span>
+                                        </div>
+                                        <div class="col-xs-12">
+                                                <div class="col-xs-5">
+                                                        <label for="dob" class="cols-xs-2 FormLabel">Date of Birth</label>
+                                                </div>
+                                                <div class="col-xs-7">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                        <i class="fa fa-calendar fa" aria-hidden="true"></i>
+                                                                </span>
+                                                                <input type="text" bsDatepicker class="form-control width-300" [bsConfig]="datePicketConfig" id="dob" name="dob" [(ngModel)]=candidateDetail.DOB
+                                                                        #DOB=ngModel placeholder="your date of birth" required [ngClass]="{'mandatory':DOB.touched && DOB.invalid}"
+                                                                />
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-xs-offset-7" *ngIf="DOB.touched && DOB.invalid">
+                                                        <span style="color: red">Enter Valid date of Birth</span>
+                                        </div>
+                                        <div class="col-xs-12">
+                                                <div class="col-xs-5">
+                                                        <label for="email" class="cols-xs-2 FormLabel">Email</label>
+                                                </div>
+                                                <div class="col-xs-7">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                        <i class="fa fa-envelope fa" aria-hidden="true"></i>
+                                                                </span>
+                                                                <input type="email" class="form-control width-300" #email name="email" id="email" [(ngModel)]=candidateDetail.EmailId #Email=ngModel
+                                                                        pattern="" placeholder="Enter your Email" required [ngClass]="{'mandatory':Email.touched && Email.invalid}"
+                                                                        email/>
+                                                                <!--<span *ngIf=Email.errors?.email style="color:red">Test</span>-->
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="col-xs-offset-7" *ngIf="Email.touched && Email.invalid">
+                                                        <span style="color: red">Enter Valid Name</span>
+                                        </div>
+                                        <div class="col-xs-12">
+                                                <div class="col-xs-5">
+                                                        <label for="Phone" class="cols-xs-2 FormLabel">Phone</label>
+                                                </div>
+                                                <div class="col-xs-7">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                        <i class="fa fa-phone fa" aria-hidden="true"></i>
+                                                                </span>
+                                                                <input type="number" class="form-control width-300" maxlength="10" name="phone" min="0" max="10" [(ngModel)]=candidateDetail.PhoneNo
+                                                                        id="phone" #Phone=ngModel placeholder="Enter your phone"
+                                                                        required [ngClass]="{'mandatory':Phone.touched &&  Phone.invalid}" />
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="col-xs-offset-7" *ngIf="Phone.touched &&  Phone.invalid">
+                                                        <span style="color: red">Enter Valid phone Number</span>
+                                        </div>
+
+                                        <div class="col-xs-12">
+                                                <div class="col-xs-5">
+                                                        <label for="hometown" class="cols-xs-2 FormLabel">Home town</label>
+                                                </div>
+                                                <div class="col-xs-7">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                        <i class="fa fa-users fa" aria-hidden="true"></i>
+                                                                </span>
+                                                                <input type="text" class="form-control width-300" appEmptyStringVallidator="" [(ngModel)]=candidateDetail.Hometown name="hometown"
+                                                                        id="hometown" #Hometown=ngModel placeholder="Enter Your home town"
+                                                                        required [ngClass]="{'mandatory':Hometown.touched &&  Hometown.invalid}" />
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-xs-offset-7" *ngIf="Hometown.touched &&  Hometown.invalid">
+                                                        <span style="color: red">Enter Valid phone Number</span>
+                                        </div>
+
+
+                                        <div class="col-xs-12">
+                                                <div class="col-xs-5">
+                                                        <label for="Department" class="cols-xs-2 FormLabel">Department </label>
+                                                </div>
+                                                <div class="col-xs-7">
+                                                        <div class="input-group">
+
+                                                                        <input  type="text" appEmptyStringVallidator="" [(ngModel)]="candidateDetail.Department"   name="Department" id="Department" style="width: 340px;height:35px;margin-bottom: 3px;"
+                                                                        #dep=ngModel required [ngClass]="{'mandatory':dep.touched && dep.invalid}" />
+ 
+                                                                  
+                                                        </div>
+
+                                                </div>
+                                        </div>
+                                        <div class="col-xs-offset-7" *ngIf="dep.touched && dep.invalid">
+                                                        <span style="color: red">Enter Valid department</span>
+                                        </div>
+
+
+                                        
+                                                <div class="col-xs-12">
+                                                        <div class="col-xs-5">
+                                                                <label for="Experience" class="cols-xs-2 FormLabel">Experience</label>
+                                                        </div>
+                                                        <div class="col-xs-7">
+                                                                <div class="input-group">
+                                                                        <span class="input-group-addon">
+                                                                                <i class="fa fa-desktop fa-lg" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <input type="number" class="form-control width-300" appEmptyStringVallidator=0 [(ngModel)]=candidateDetail.Experience name="Experience"
+                                                                                id="Experience" #Experience=ngModel placeholder="Experience in year"
+                                                                                [required]="dep.value !='Fresher'" [ngClass]="{'mandatory':Experience.touched && Experience.invalid}"
+                                                                        />
+                                                                </div>
+                                                        </div>
+                                                </div>
+ 
+                                                <div class="col-xs-offset-7" *ngIf="Experience.touched && Experience.invalid">
+                                                                <span style="color: red">Enter Valid department</span>
+                                                </div>
+
+                                                <div class="col-xs-12">
+                                                        <div class="col-xs-5">
+                                                                <label for="CCTC" class="cols-xs-2 FormLabel">Current CTC in Lakhs</label>
+                                                        </div>
+                                                        <div class="col-xs-7">
+                                                                <div class="input-group">
+                                                                        <span class="input-group-addon">
+                                                                                <i class="fa fa-money fa-lg" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <input type="number" class="form-control width-300" appEmptyStringVallidator=0 [(ngModel)]=candidateDetail.CurrentCTC id="CCTC"
+                                                                                name="CCTC" #CCTC=ngModel placeholder="Current CTC in Lakhs"
+                                                                                [required]="dep.value !='Fresher'" [ngClass]="{'mandatory':CCTC.touched &&  CCTC.invalid}"
+                                                                        />
+                                                                </div>
+                                                        </div>
+
+                                                </div>
+                                                <div class="col-xs-offset-7" *ngIf="CCTC.touched &&  CCTC.invalid">
+                                                                <span style="color: red">Enter Valid department</span>
+                                                </div>
+
+
+                                                <div class="col-xs-12">
+                                                        <div class="col-xs-5">
+                                                                <label for="ECTC" class="cols-xs-2 FormLabel">Expected CTC in Lakhs</label>
+                                                        </div>
+                                                        <div class="col-xs-7">
+                                                                <div class="input-group">
+                                                                        <span class="input-group-addon">
+                                                                                <i class="fa fa-money fa-lg" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <input type="number" class="form-control width-300" appEmptyStringVallidator=0 [(ngModel)]=candidateDetail.ExpectedCTC name="ECTC"
+                                                                                id="ECTC" #ECTC=ngModel placeholder="Expected CTC in Lakhs"
+                                                                                [required]="dep.value !='Fresher'" [ngClass]="{'mandatory':ECTC.touched && ECTC.invalid}"
+                                                                        />
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="col-xs-offset-7" *ngIf="ECTC.touched && ECTC.invalid">
+                                                                <span style="color: red">Enter Valid Expected CTC</span>
+                                                </div>
+                                                <div class="col-xs-12">
+                                                        <div class="col-xs-5">
+                                                                <label for="NoticePeriod" class="cols-xs-2 FormLabel">Notice Period</label>
+                                                        </div>
+                                                        <div class="col-xs-7">
+                                                                <div class="input-group">
+                                                                        <span class="input-group-addon">
+                                                                                <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <input type="number" class="form-control width-300" min="1" appEmptyStringVallidator=0 maxlength="10" [(ngModel)]=candidateDetail.NoticePeriod
+                                                                                name="Noticeperiod" id="Noticeperiod" #NoticePeriod=ngModel
+                                                                                placeholder="Notice period in months" [required]="dep.value !='Fresher'"
+                                                                                [ngClass]="{'mandatory':NoticePeriod.touched && NoticePeriod.invalid}"
+                                                                        />
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="col-xs-offset-7" *ngIf="NoticePeriod.touched && NoticePeriod.invalid">
+                                                                <span style="color: red">Enter Valid Notice Period</span>
+                                                </div>
+                                        
+
+                                                <div class="col-xs-12">
+                                                                <div class="col-xs-5">
+                                                                        <label for="ststus" class="cols-xs-2 FormLabel FormLabel">Status Of candidate</label>
+                                                                </div>
+                                                                <div class="col-xs-7">
+                                                                        <input type="radio" value="Selected" name="ststus" id="ststus" [(ngModel)]=candidateDetail.Status> Selected
+                                                                        <input type="radio" value="Hold" name="ststus" id="ststus" [(ngModel)]=candidateDetail.Status> Hold
+                                                                        <input type="radio" value="Rejected" name="ststus" id="ststus" [(ngModel)]=candidateDetail.Status> Rejected
+                                                                </div>
+                                                                </div>
+
+                                        <div class="col-xs-12">
+                                                <div class="col-xs-5">
+                                                        <label for="Interviewer" class="cols-xs-2 FormLabel FormLabel">Interviewer</label>
+                                                </div>
+                                                <div class="col-xs-7">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                        <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                                                                </span>
+                                                                <input type="text" class="form-control width-300" [(ngModel)]=candidateDetail.Interviewer name="Interviewer" id="Interviewer"
+                                                                        #Interviewer=ngModel placeholder="Interviewer" />
+                                                        </div>
+                                                </div>
+
+                                        </div>
+                                        <div class="col-xs-12">
+                                                <div class="col-xs-5">
+                                                        <label for="Comments" class="cols-xs-2 FormLabel FormLabel">Comments from Interviewer</label>
+                                                </div>
+                                                <div class="col-xs-7">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                        <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
+                                                                </span>
+                                                                <textarea type="text" class="form-control width-300" [(ngModel)]=candidateDetail.CommentsfromInterviewer name="Comments"
+                                                                        id="Comments" #Comments=ngModel placeholder="Comments from Interviewer"></textarea>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                                <div class="col-xs-5">
+                                                        <label for="CommentsHR" class="cols-xs-2 FormLabel FormLabel">Comments from Manager/HR</label>
+                                                </div>
+                                                <div class="col-xs-7">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                        <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
+                                                                </span>
+                                                                <textarea type="text" class="form-control width-300" [(ngModel)]=candidateDetail.CommentsfromHR name="CommentsHR" id="CommentsHR"
+                                                                        #CommentsfromHR=ngModel placeholder="Comments from Manager/HR"></textarea>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                                <div class="col-xs-5">
+                                                        <label for="ststus" class="cols-xs-2 FormLabel FormLabel">Status Of candidate</label>
+                                                </div>
+                                                <div class="col-xs-7">
+                                                        <input type="radio" value="Selected" name="ststus" id="ststus" [(ngModel)]=candidateDetail.Status> Selected
+                                                        <input type="radio" value="Hold" name="ststus" id="ststus" [(ngModel)]=candidateDetail.Status> Hold
+                                                        <input type="radio" value="Rejected" name="ststus" id="ststus" [(ngModel)]=candidateDetail.Status> Rejected
+                                                </div>
+                                                </div>
+
+
+
+                                        <div class="col-xs-offset-5 col-xs-2">
+                                                <button *ngIf=updateCandidateButton type="submit" id="button" (click)="candidateForm.reset();updateCandidateButton=false"
+                                                        class="btn btn-warning btn-lg btn-block login-button col-xs-2">Cancel</button>
+                                        </div>
+
+                                        <div class="form-group col-xs-offset-1 col-xs-3 padding-5 ">
+                                                <button *ngIf=!updateCandidateButton type="submit" [disabled]="!candidateForm.valid" id="button" (click)=addCandidate(candidateForm);
+                                                        class="btn btn-primary btn-lg btn-block login-button">Add</button>
+                                                <button *ngIf=updateCandidateButton type="submit" id="button" [disabled]="!candidateForm.valid" (click)=updtaeCandidate(candidateForm); class="btn btn-primary btn-lg btn-block login-button">Update</button>
+                                        </div>
+                                </form>
+
+                        </div>
+                </div>
+        </div>
+
+
+
+
+        <div id="searchCandidate" class="tab-pane col-xs-offset-1" [ngClass]="{'active':editcandidate==3} ">
+                <br/>
+                <div class="col-xs-12">
+                        <div class="col-xs-2">
+                                <label>Name</label>
+                        </div>
+                        <div class="col-xs-6">
+                                <input type="text" class="form-control" [(ngModel)]=searchCandidatename placeholder="Name">
+                        </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="col-xs-12">
+                        <div class="col-xs-2">
+                                <label>Email</label>
+                        </div>
+                        <div class="col-xs-6">
+                                <input type="email" class="form-control" [(ngModel)]=searchCandidateEmail placeholder="Email">
+                        </div>
+                </div>
+
+                <br/>
+                <br/>
+                <div class="col-xs-offset-3 col-xs-9">
+                        <button type="submit" class="btn btn-success" (click)=searchCandidate();>Search</button>
+                        <button type="submit" class="btn btn-danger" (click)="searchCandidateEmail=undefined;searchCandidatename=undefined;">Clear</button>
+
+                        <br/>
+                        <br/>
+                </div>
+
+
+
+
+        </div>
+
+
+</div>
+<div class="col-xs-12 col-xs-offset-8">
+        <button *ngIf="showCandidateList && searchCandidateDetails && searchCandidateDetails.length>0" type="submit" class="btn btn-danger"
+                (click)="searchCandidateDetails=[];">Clear Candidate List</button>
+        <button *ngIf="showCandidateList && searchCandidateDetails && searchCandidateDetails.length>0" type="submit" class="btn btn-info"
+                (click)=GenerateExcel();>Export to Excel</button>
+        <br/>
+        <br/>
+</div>
+
+<div class="container">
+        <div class="col-xs-12 col-md-12 col-lg-12" *ngIf="showCandidateList && searchCandidateDetails && searchCandidateDetails.length>0">
+                <table class="table table-striped">
+                        <thead class="tableHead">
+                                <tr>
+                                        <td> Name </td>
+                                        <td> Email Id </td>
+                                        <td> Phone </td>
+                                        <td>Date of Interview </td>
+                                        <td>Date of Phone Interview </td>
+                                        <td> Department </td>
+                                        <td> Experience </td>
+                                        <td>Status </td>
+                                        <td colspan="3"> Manage </td>
+                                </tr>
+                        </thead>
+                        <tr *ngFor="let data of searchCandidateDetails | paginate: {itemsPerPage: 8, currentPage: p}">
+                                <td>
+                                        {{data.Name}}
+                                </td>
+                                <td>
+                                        {{data.EmailId}}
+                                </td>
+                                <td>
+                                        {{data.PhoneNo}}
+                                </td>
+                                <td>
+                                        {{data.DateofInterview |date:'MM/dd/yyyy'}}
+                                </td>
+                                <td>
+                                        {{data.DateOfPhoneIntervbiew |date:'MM/dd/yyyy'}}
+                                </td>
+
+                                <td>
+                                        {{data.Department}}
+                                </td>
+                                <td>
+                                        {{data.Experience}}
+                                </td>
+                                <td>
+                                        {{data.Status}}
+                                </td>
+                                <td>
+                                        <button class="btn btn-warning glyphicon glyphicon-eye-open zoom" (click)=ViewCandidate(ViewCandidateModal,data); tooltip="View Candidate Details"
+                                                [tooltipDisabled]="false" [tooltipAnimation]="true" tooltipPlacement="top"> </button>
+                                </td>
+
+                                <td>
+                                        <button class="btn btn-primary glyphicon glyphicon-pencil zoom" (click)=editCaandidate(data); tooltip="Edit Candidate" [tooltipDisabled]="false"
+                                                [tooltipAnimation]="true" tooltipPlacement="top"> </button>
+                                </td>
+                                <td>
+                                        <button class="btn btn-danger glyphicon glyphicon-trash zoom" (click)=confirmToDeleteCandidate(confirmdelete,data); tooltip="Delete Candidate"
+                                                [tooltipDisabled]="false" [tooltipAnimation]="true" tooltipPlacement="top"> </button>
+                                </td>
+                        </tr>
+
+
+                </table>
+                <div class="col-md-12 col-md-offset-2" *ngIf="searchCandidateDetails.length >=8">
+                        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                </div>
+        </div>
+
+
+
+</div>
+
+
+<!--<div *ngIf="prmEmail.invalid"> 
+                 Name required. 
+           </div> 
+         <div *ngIf="prmEmail.errors?.email"> 
+         Primary Name not valid.
+         </div> -->
+
+
+
+<ng-template #confirmdelete>
+        <div class="modal-body">
+                <div class="panel panel-warning">
+                        <div class="panel-heading">
+                                warning.!
+                        </div>
+                        <div class="panel-body">
+                                <h5>Do you really want to remove :
+                                        <span style="color: red">{{deleteCandidate.Name}}</span>
+                                </h5>
+                        </div>
+
+                        <button class="btn btn-success col-xs-offset-4" (click)=deleteCaandidate();>Remove</button>
+                        <button class="btn btn-danger" (click)=cancel();>Cancel</button>
+                </div>
+        </div>
+</ng-template>
+
+
+
+
+
+
+<ng-template class="modal" #ViewCandidateModal>
+        <div class="container col-xs-12">
+                <div class="panel panel-primary">
+                        <div class="panel-heading">
+                                <button type="button" class="close text-white" (click)=cancel();>
+                                        <span aria-hidden="true" >×</span>
+                                        <span class="sr-only">Close</span>
+                                </button>
+
+                                <h4>Candidate Information</h4>
+                        </div>
+                        <div class="container panel-body">
+                                <div class="col-xs-12 text-bold padding-bottom-10 ">
+                                        <div class="col-xs-offset-1 col-xs-3">
+                                                Candidate First Name
+                                        </div>
+                                        <div class="col-xs-7 pull-left text-blue">
+                                                : {{candidateDetail.Name}}
+                                        </div>
+                                </div>
+                                <br/>
+                                <div class="col-xs-12 text-bold padding-bottom-10 ">
+                                        <div class="col-xs-offset-1 col-xs-3">
+                                                Candidate Last Name
+                                        </div>
+                                        <div class="col-xs-7 pull-left text-blue">
+                                                : {{candidateDetail.LastName}}
+                                        </div>
+                                </div>
+                                <br/>
+                                <div class="col-xs-12 text-bold padding-bottom-10 ">
+                                        <div class="col-xs-offset-1 col-xs-3">
+                                                Date of Birth
+                                        </div>
+                                        <div class="col-xs-7 pull-left text-blue">
+                                                : {{candidateDetail.DOB}}
+                                        </div>
+                                </div>
+                                <br/>
+                                <div class="col-xs-12 text-bold padding-bottom-10 ">
+                                        <div class="col-xs-offset-1 col-xs-3">
+                                                Email Id
+                                        </div>
+                                        <div class="col-xs-7 pull-left text-blue">
+                                                : {{candidateDetail.EmailId}}
+                                        </div>
+                                </div>
+                                <div class="col-xs-12 text-bold padding-bottom-10 ">
+                                        <div class="col-xs-offset-1 col-xs-3">
+                                                Phone Number
+                                        </div>
+                                        <div class="col-xs-7 pull-left text-blue">
+                                                : {{candidateDetail.PhoneNo}}
+                                        </div>
+                                </div>
+                                <div class="col-xs-12 text-bold padding-bottom-10 ">
+                                        <div class="col-xs-offset-1 col-xs-3">
+                                                Home town
+                                        </div>
+                                        <div class="col-xs-7 pull-left text-blue">
+                                                : {{candidateDetail.Hometown}}
+                                        </div>
+                                </div>
+                                <div class="col-xs-12 text-bold padding-bottom-10 ">
+                                        <div class="col-xs-offset-1 col-xs-3">
+                                                Department
+                                        </div>
+                                        <div class="col-xs-7 pull-left text-blue">
+                                                : {{candidateDetail.Department}}
+                                        </div>
+                                </div>
+                                <div *ngIf="candidateDetail.Experience>0">
+
+
+                                        <div class="col-xs-12 text-bold padding-bottom-10 ">
+                                                <div class="col-xs-offset-1 col-xs-3">
+                                                        Experience in years
+                                                </div>
+                                                <div class="col-xs-7 pull-left text-blue">
+                                                        : {{candidateDetail.Experience}}
+                                                </div>
+                                        </div>
+                                        <div class="col-xs-12 text-bold padding-bottom-10 ">
+                                                <div class="col-xs-offset-1 col-xs-3">
+                                                        Current CTC
+                                                </div>
+                                                <div class="col-xs-7 pull-left text-blue">
+                                                        : {{candidateDetail.CurrentCTC}}
+                                                </div>
+                                        </div>
+                                        <div class="col-xs-12 text-bold padding-bottom-10 ">
+                                                <div class="col-xs-offset-1 col-xs-3">
+                                                        Expected CTC
+                                                </div>
+                                                <div class="col-xs-7 pull-left text-blue">
+                                                        : {{candidateDetail.ExpectedCTC}}
+                                                </div>
+                                        </div>
+                                        <div class="col-xs-12 text-bold padding-bottom-10 ">
+                                                <div class="col-xs-offset-1 col-xs-3">
+                                                        Notice Period
+                                                </div>
+                                                <div class="col-xs-7 pull-left text-blue">
+                                                        : {{candidateDetail.NoticePeriod}}
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-xs-12 text-bold padding-bottom-10 ">
+                                        <div class="col-xs-offset-1 col-xs-3">
+                                                Date Of Phone Interview
+                                        </div>
+                                        <div class="col-xs-7 pull-left text-blue">
+                                                : {{candidateDetail.DateOfPhoneIntervbiew}}
+                                        </div>
+                                </div>
+                                <div class="col-xs-12 text-bold padding-bottom-10 ">
+                                        <div class="col-xs-offset-1 col-xs-3">
+                                                Date Of Interview
+                                        </div>
+                                        <div class="col-xs-7 pull-left text-blue">
+                                                : {{candidateDetail.DateofInterview}}
+                                        </div>
+                                </div>
+                                <div class="col-xs-12 text-bold padding-bottom-10 ">
+                                        <div class="col-xs-offset-1 col-xs-3">
+                                                Interviewer Name
+                                        </div>
+                                        <div class="col-xs-7 pull-left text-blue">
+                                                : {{candidateDetail.Interviewer}}
+                                        </div>
+                                </div>
+                                <div class="col-xs-12 text-bold padding-bottom-10 ">
+                                        <div class="col-xs-offset-1 col-xs-3">
+                                                Comments from Interviewer
+                                        </div>
+                                        <div class="col-xs-7 pull-left text-blue">
+                                                : {{candidateDetail.CommentsfromInterviewer}}
+                                        </div>
+                                </div>
+                                <div class="col-xs-12 text-bold padding-bottom-10 ">
+                                        <div class="col-xs-offset-1 col-xs-3">
+                                                Comments from HR/Manager
+                                        </div>
+                                        <div class="col-xs-7 pull-left text-blue">
+                                                : {{candidateDetail.CommentsfromHR}}
+                                        </div>
+                                </div>
+                                <div class="col-xs-12 text-bold padding-bottom-10 ">
+                                        <div class="col-xs-offset-1 col-xs-3">
+                                                Candidate Status
+                                        </div>
+                                        <div class="col-xs-7 pull-left text-blue">
+                                                :
+                                                <span [ngClass]="{'text-green':candidateDetail.Status=='Selected','text-orange':candidateDetail.Status=='Hold','text-red':candidateDetail.Status=='Rejected'}">
+                                                {{candidateDetail.Status}}</span>
+                                        </div>
+                                </div>
+
+
+                                <button type="button" class="btn btn-sm btn-danger col-xs-offset-7" (click)="cancel();">Close</button>
+                        </div>
+
+                </div>
+        </div>
+</ng-template>

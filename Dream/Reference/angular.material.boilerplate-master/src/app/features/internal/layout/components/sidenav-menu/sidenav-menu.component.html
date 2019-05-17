@@ -1,0 +1,71 @@
+<ul class="nav" appAccordionNav appAppendSubmenuIcon appSlimScroll appHighlightActiveItems>
+	<li>
+		<a mat-button [routerLink]="['/internal/dashboard']">
+			<i class="nav-icon material-icons">home</i>
+			<span class="nav-text">Dashboard</span>
+		</a>
+	</li>
+	<li>
+		<a mat-button href="javascript:;" appToggleQuickview="customizer">
+			<i class="nav-icon material-icons">settings</i>
+			<span class="nav-text">Customizer</span>
+		</a>
+	</li>
+	<li>
+		<a mat-button href="#/internal/table">
+			<i class="nav-icon material-icons">list</i>
+			<span class="nav-text">Tables</span>
+		</a>
+		<ul>
+			<li>
+				<a mat-button class="md-button prepend-icon" [routerLink]="['/internal/table/data-table']">
+					<span>Data Tables</span>
+				</a>
+			</li>
+		</ul>
+	</li>
+
+	<li class="nav-divider"></li>
+	<li>
+		<a mat-button href="#/internal/menu">
+			<i class="nav-icon material-icons">sort</i>
+			<span class="nav-text">Menu Levels</span>
+		</a>
+		<ul>
+			<li>
+				<a mat-button class="md-button prepend-icon" href="javascript:;">
+					<span>Level 1</span>
+				</a>
+			</li>
+			<li>
+				<a mat-button class="md-button prepend-icon" href="javascript:;">
+					<span>Level 1</span>
+				</a>
+				<ul>
+					<li>
+						<a mat-button class="md-button" href="javascript:;">
+							<span>Level 2</span>
+						</a>
+					</li>
+					<li>
+						<a mat-button class="md-button" href="javascript:;">
+							<span>Level 2</span>
+						</a>
+						<ul>
+							<li>
+								<a mat-button class="md-button" href="javascript:;">
+									<span>Level 3</span>
+								</a>
+							</li>
+							<li>
+								<a mat-button class="md-button" href="javascript:;">
+									<span>Level 3</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>

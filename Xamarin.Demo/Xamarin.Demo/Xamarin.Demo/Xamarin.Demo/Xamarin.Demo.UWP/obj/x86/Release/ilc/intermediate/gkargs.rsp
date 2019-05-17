@@ -1,0 +1,11 @@
+"D:\OProjects\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo.UWP\obj\x86\Release\ilc\in\Xamarin.Demo.UWP.exe"
+"D:\OProjects\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo.UWP\obj\x86\Release\ilc\in\Xamarin.Forms.Core.dll"
+"D:\OProjects\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo.UWP\obj\x86\Release\ilc\in\Xamarin.Forms.Platform.dll"
+"D:\OProjects\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo.UWP\obj\x86\Release\ilc\in\Xamarin.Forms.Platform.UAP.dll"
+"D:\OProjects\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo.UWP\obj\x86\Release\ilc\in\Xamarin.Forms.Xaml.dll"
+/Lib:"D:\OProjects\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo.UWP\obj\x86\Release\ilc\in"
+/Lib:"C:\Users\Admin\.nuget\packages\microsoft.net.native.compiler\2.0.0\tools\x86\ilc\lib\Private"
+/WinMD:"D:\OProjects\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo.UWP\obj\x86\Release\ilc\in\WinMetadata\Windows.winmd"
+/VSTelemetrySessionSettings:"{"AppId":1001,"AppInsightsInstrumentationKey":"f144292e-e3b2-4011-ac90-20e5c03fbce5","AsimovInstrumentationKey":"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70","HostName":"Dev14","Id":"1bb9f3d2-c271-4a08-8d28-45ad6fe53a2d","IsOptedIn":true,"ProcessStartTime":636758344317236341,"UserId":"34483d6b-eda5-48a3-aa90-a2d0f116ba13"}"
+/RdXmlPath:"C:\Users\Admin\.nuget\packages\microsoft.net.native.compiler\2.0.0\tools\LibraryXML"
+/RunOnlyPreDR

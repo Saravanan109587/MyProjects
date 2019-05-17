@@ -1,0 +1,13 @@
+D:\OProjects\TicketTracker\TicketTrackerAPI\gateWay\bin\Debug\netcoreapp2.1\gateWay.deps.json
+D:\OProjects\TicketTracker\TicketTrackerAPI\gateWay\bin\Debug\netcoreapp2.1\gateWay.runtimeconfig.json
+D:\OProjects\TicketTracker\TicketTrackerAPI\gateWay\bin\Debug\netcoreapp2.1\gateWay.runtimeconfig.dev.json
+D:\OProjects\TicketTracker\TicketTrackerAPI\gateWay\bin\Debug\netcoreapp2.1\gateWay.dll
+D:\OProjects\TicketTracker\TicketTrackerAPI\gateWay\obj\Debug\netcoreapp2.1\gateWay.csproj.CoreCompileInputs.cache
+D:\OProjects\TicketTracker\TicketTrackerAPI\gateWay\obj\Debug\netcoreapp2.1\gateWay.RazorAssemblyInfo.cache
+D:\OProjects\TicketTracker\TicketTrackerAPI\gateWay\obj\Debug\netcoreapp2.1\gateWay.RazorAssemblyInfo.cs
+D:\OProjects\TicketTracker\TicketTrackerAPI\gateWay\obj\Debug\netcoreapp2.1\gateWay.AssemblyInfoInputs.cache
+D:\OProjects\TicketTracker\TicketTrackerAPI\gateWay\obj\Debug\netcoreapp2.1\gateWay.AssemblyInfo.cs
+D:\OProjects\TicketTracker\TicketTrackerAPI\gateWay\obj\Debug\netcoreapp2.1\gateWay.RazorTargetAssemblyInfo.cache
+D:\OProjects\TicketTracker\TicketTrackerAPI\gateWay\bin\Debug\netcoreapp2.1\gateWay.pdb
+D:\OProjects\TicketTracker\TicketTrackerAPI\gateWay\obj\Debug\netcoreapp2.1\gateWay.dll
+D:\OProjects\TicketTracker\TicketTrackerAPI\gateWay\obj\Debug\netcoreapp2.1\gateWay.pdb

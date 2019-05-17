@@ -1,0 +1,245 @@
+<img class="img col-sm-offset-5" src="../../assets/kmit_solution_logo.jpg">
+
+
+<div class="row col-xs-12">
+        <div class="col-xs-5 col-xs-offset-3">
+                <label class="">Active Candidate Name:
+                        <span style="color:green ;margin-left: 0">{{ActiveCandidate.Name}}</span>
+                </label>
+        </div>
+        <div class="  col-xs-3 pull-left">
+                <button routerLink="/logIn" style="margin-top: 0px;padding-bottom:3px;margin-left: 18px" (click)=logOut(); class="btn btn-sm btn-primary logOut">Log out</button>
+        </div>
+</div>
+
+
+
+<h4 style="text-align: center;color:brown">
+        <b>Recruitment Database</b>
+</h4>
+<!--<div class="row col-sm-12">
+        <div class="col-sm-8 col-sm-offset-1">
+                <ul class="nav nav-tabs">
+                        <li class="activeLi"> Add New candidate</li>
+                        <!-- <li class="" [ngClass]="{'activeLi':editcandidate==2}"  (click)=setpath(2); > Upload candidates </li>
+  <li class="" [ngClass]="{'activeLi':editcandidate==3}" (click)=setpath(3);  >Search candidates</li>
+                </ul>
+        </div>
+
+</div>-->
+
+<div class="tab-content col-md-offset-3 col-md-6">
+        <div id="addCandidate" class="tab-pane active">
+                <div class="panel panel-warning">
+                        <div class="panel-body">
+                                <form novalidate #candidateForm="ngForm">
+                                        <div class="col-md-12">
+                                                <div class="col-md-5">
+                                                        <label for="password" class="cols-sm-2 FormLabel  ">Date of Interview</label>
+                                                </div>
+                                                <div class="col-md-7">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon cols-sm-8">
+                                                                        <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
+                                                                </span>
+                                                                <input type="text" class="form-control width-300  " bsDatepicker [bsConfig]="datePicketConfig" [(ngModel)]="candidateDetail.DateofInterview"
+                                                                        name="dateOf" id="dateOf" placeholder="Date of Interview"
+                                                                        required #DOI=ngModel [ngClass]="{'mandatory':DOI.invalid}"
+                                                                />
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                                <div class="col-sm-5">
+                                                        <label for="DateofphoneInterview" class="cols-sm-2 FormLabel  ">Date of Phone Interview</label>
+                                                </div>
+                                                <div class="col-sm-7">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon cols-sm-8">
+                                                                        <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
+                                                                </span>
+                                                                <input type="text" class="form-control width-300  " [(ngModel)]="candidateDetail.DateOfPhoneIntervbiew" name="dateOfPhone"
+                                                                        id="dateOf" placeholder="Date Of Phone Interview" required
+                                                                        #DOPI=ngModel [ngClass]="{'mandatory':DOPI.invalid}" bsDatepicker
+                                                                        [bsConfig]="datePicketConfig" />
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                                <div class="col-md-5">
+                                                        <label for="name" class="cols-sm-2 FormLabel">Name</label>
+                                                </div>
+                                                <div class="col-md-7">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                        <i class="fa fa-user fa" aria-hidden="true"></i>
+                                                                </span>
+                                                                <input type="text" class="form-control width-300" name="name" [(ngModel)]=candidateDetail.Name placeholder="Enter your Name"
+                                                                        appEmptyStringVallidator="" #Name=ngModel required [ngClass]="{'mandatory':Name.invalid}"
+                                                                />
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                                <div class="col-md-5">
+                                                        <label for="name" class="cols-sm-2 FormLabel">Date of Birth</label>
+                                                </div>
+                                                <div class="col-md-7">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                        <i class="fa fa-calendar fa" aria-hidden="true"></i>
+                                                                </span>
+                                                                <input type="text" class="form-control width-300" name="dob" [(ngModel)]=candidateDetail.DOB #DOB=ngModel placeholder="your date of birth"
+                                                                        required [ngClass]="{'mandatory':DOB.invalid}" bsDatepicker
+                                                                        [bsConfig]="datePicketConfig" />
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                                <div class="col-md-5">
+                                                        <label for="email" class="cols-sm-2 FormLabel">Email</label>
+                                                </div>
+                                                <div class="col-md-7">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                        <i class="fa fa-envelope fa" aria-hidden="true"></i>
+                                                                </span>
+                                                                <input type="email" class="form-control width-300" #email name="email" [(ngModel)]=candidateDetail.EmailId #Email=ngModel
+                                                                        pattern="" placeholder="Enter your Email" required [ngClass]="{'mandatory':Email.invalid}"
+                                                                        email/>
+                                                                <!--<span *ngIf=Email.errors?.email style="color:red">Test</span>-->
+                                                        </div>
+                                                </div>
+                                        </div>
+
+
+                                        <div class="col-md-12">
+                                                <div class="col-md-5">
+                                                        <label for="Phone" class="cols-sm-2 FormLabel">Phone</label>
+                                                </div>
+                                                <div class="col-md-7">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                        <i class="fa fa-phone fa" aria-hidden="true"></i>
+                                                                </span>
+                                                                <input type="number" class="form-control width-300" name="phone" min="0" max="10" [(ngModel)]=candidateDetail.PhoneNo #Phone=ngModel
+                                                                        placeholder="Enter your phone" required [ngClass]="{'mandatory':Phone.invalid}"
+                                                                />
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                                <div class="col-md-5">
+                                                        <label for="hometown" class="cols-sm-2 FormLabel">Home town</label>
+                                                </div>
+                                                <div class="col-md-7">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                        <i class="fa fa-users fa" aria-hidden="true"></i>
+                                                                </span>
+                                                                <input type="text" class="form-control width-300" [(ngModel)]=candidateDetail.Hometown name="hometown" #Hometown=ngModel
+                                                                        appEmptyStringVallidator="" placeholder="Enter Your home town"
+                                                                        required [ngClass]="{'mandatory':Hometown.invalid}" />
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                                <div class="col-md-5">
+                                                        <label for="Department" class="cols-sm-2 FormLabel">Department </label>
+                                                </div>
+                                                <div class="col-md-7">
+                                                        <div class="input-group">
+                                                                <select [(ngModel)]="candidateDetail.Department" name="Department" style="width: 340px;height:35px;margin-bottom: 3px;" #dep=ngModel
+                                                                        required [ngClass]="{'mandatory':dep.invalid}">
+                                                                        <option *ngFor="let item of DepartmentList" [value]="item">{{item}}</option>
+                                                                </select>
+                                                        </div>
+
+                                                </div>
+                                        </div>
+
+
+                                        <div *ngIf=" candidateDetail.Department && candidateDetail.Department!='Fresher' && candidateDetail.Department!=''">
+
+                                                <div class="col-md-12">
+                                                        <div class="col-md-5">
+                                                                <label for="Experience" class="cols-sm-2 FormLabel">Experience</label>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                                <div class="input-group">
+                                                                        <span class="input-group-addon">
+                                                                                <i class="fa fa-desktop fa-lg" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <input type="number" class="form-control width-300" [(ngModel)]=candidateDetail.Experience name="Experience" #Experience=ngModel
+                                                                                placeholder="Experience in year" [required]="dep.value !='Fresher'"
+                                                                                appEmptyStringVallidator="0" [ngClass]="{'mandatory':dep.value !='Fresher' && Experience.invalid && dep.valid}"
+                                                                        />
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+
+                                                <div class="col-md-12">
+                                                        <div class="col-md-5">
+                                                                <label for="CCTC" class="cols-sm-2 FormLabel">Current CTC in Lakh</label>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                                <div class="input-group">
+                                                                        <span class="input-group-addon">
+                                                                                <i class="fa fa-money fa-lg" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <input type="number" class="form-control width-300" [(ngModel)]=candidateDetail.CurrentCTC name="Ectc" #CCTC=ngModel placeholder="Current CTC in Lakh"
+                                                                                appEmptyStringVallidator="0" [required]="dep.value !='Fresher'"
+                                                                                [ngClass]="{'mandatory':dep.value !='Fresher' && CCTC.invalid && dep.valid}"
+                                                                        />
+                                                                </div>
+                                                        </div>
+
+                                                </div>
+
+
+                                                <div class="col-md-12">
+                                                        <div class="col-md-5">
+                                                                <label for="ECTC" class="cols-sm-2 FormLabel">Expected CTC in Lakh</label>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                                <div class="input-group">
+                                                                        <span class="input-group-addon">
+                                                                                <i class="fa fa-money fa-lg" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <input type="number" class="form-control width-300" [(ngModel)]=candidateDetail.ExpectedCTC name="Cctc" #ECTC=ngModel placeholder="Expected CTC in Lakh"
+                                                                                appEmptyStringVallidator="0" [required]="dep.value !='Fresher'"
+                                                                                [ngClass]="{'mandatory':dep.value !='Fresher' && ECTC.invalid && dep.valid}"
+                                                                        />
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                        <div class="col-md-5">
+                                                                <label for="NoticePeriod" class="cols-sm-2 FormLabel">Notice Period</label>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                                <div class="input-group">
+                                                                        <span class="input-group-addon">
+                                                                                <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <input type="number" class="form-control width-300" [(ngModel)]=candidateDetail.NoticePeriod name="Noticeperiod" #NoticePeriod=ngModel
+                                                                                placeholder="Notice period in months" [required]="dep.value !='Fresher'"
+                                                                                appEmptyStringVallidator="0" [ngClass]="{'mandatory':dep.value !='Fresher' && NoticePeriod.invalid && dep.valid}"
+                                                                        />
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="form-group col-md-offset-9 col-md-3 padding-5 ">
+                                                <button type="submit" [disabled]="!candidateForm.valid" id="button" (click)=addCandidate(candidateForm); class="btn btn-primary btn-lg btn-block login-button">Save</button>
+
+                                        </div>
+                                </form>
+
+                        </div>
+                </div>
+        </div>
+</div>

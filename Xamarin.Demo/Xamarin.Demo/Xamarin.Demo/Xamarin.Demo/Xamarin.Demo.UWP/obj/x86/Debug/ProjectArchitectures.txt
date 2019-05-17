@@ -1,0 +1,1 @@
+D:\OProjects\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo.UWP\Xamarin.Demo.UWP.csproj;x86

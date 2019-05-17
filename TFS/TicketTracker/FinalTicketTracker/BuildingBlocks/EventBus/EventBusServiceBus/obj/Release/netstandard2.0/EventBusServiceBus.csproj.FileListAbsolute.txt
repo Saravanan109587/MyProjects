@@ -1,0 +1,14 @@
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\bin\Release\netstandard2.0\EventBusServiceBus.deps.json
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\bin\Release\netstandard2.0\EventBusServiceBus.dll
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\bin\Release\netstandard2.0\EventBusServiceBus.pdb
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\bin\Release\netstandard2.0\EventBus.dll
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\bin\Release\netstandard2.0\EventBusRabbitMQ.dll
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\bin\Release\netstandard2.0\EventBusRabbitMQ.pdb
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\bin\Release\netstandard2.0\EventBus.pdb
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\obj\Release\netstandard2.0\EventBusServiceBus.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\obj\Release\netstandard2.0\EventBusServiceBus.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\obj\Release\netstandard2.0\EventBusServiceBus.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\obj\Release\netstandard2.0\EventBusServiceBus.AssemblyInfo.cs
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\obj\Release\netstandard2.0\EventBusServiceBus.csproj.CopyComplete
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\obj\Release\netstandard2.0\EventBusServiceBus.dll
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\obj\Release\netstandard2.0\EventBusServiceBus.pdb

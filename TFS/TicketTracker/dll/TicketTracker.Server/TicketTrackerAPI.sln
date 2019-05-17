@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketTrackerAPI", "TicketTrackerAPI\TicketTrackerAPI.csproj", "{CA5A1269-C6C9-43F1-90D3-BC979BF15317}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketNotifierAPI", "TicketNotifierAPI\TicketNotifierAPI.csproj", "{38E7FB8F-450A-4193-A2FD-8345219F9C6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gateWay", "gateWay\gateWay.csproj", "{E3C7268A-84D6-4DB0-8D11-CF3AE7451CF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationBlocks", "ApplicationBlocks", "{F64FB615-A8F3-48EB-8D64-233C784E68B7}"
+	ProjectSection(SolutionItems) = preProject
+		EBus.cs = EBus.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packages", "packages", "{F6D849ED-82AA-4879-9585-1A4D6A9DC85B}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBus\bin\Debug\netstandard2.0\EventBus.dll = C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBus\bin\Debug\netstandard2.0\EventBus.dll
+		C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusRabbitMQ\bin\Debug\netstandard2.0\EventBus.dll = C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusRabbitMQ\bin\Debug\netstandard2.0\EventBus.dll
+		C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusRabbitMQ\bin\Debug\netstandard2.0\EventBusRabbitMQ.dll = C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusRabbitMQ\bin\Debug\netstandard2.0\EventBusRabbitMQ.dll
+		C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\bin\Debug\netstandard2.0\EventBusServiceBus.dll = C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\bin\Debug\netstandard2.0\EventBusServiceBus.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA5A1269-C6C9-43F1-90D3-BC979BF15317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA5A1269-C6C9-43F1-90D3-BC979BF15317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA5A1269-C6C9-43F1-90D3-BC979BF15317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA5A1269-C6C9-43F1-90D3-BC979BF15317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38E7FB8F-450A-4193-A2FD-8345219F9C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E7FB8F-450A-4193-A2FD-8345219F9C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E7FB8F-450A-4193-A2FD-8345219F9C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E7FB8F-450A-4193-A2FD-8345219F9C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3C7268A-84D6-4DB0-8D11-CF3AE7451CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3C7268A-84D6-4DB0-8D11-CF3AE7451CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3C7268A-84D6-4DB0-8D11-CF3AE7451CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3C7268A-84D6-4DB0-8D11-CF3AE7451CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D8AC496-78DB-47BF-B559-22500E6AF6B8}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://npsaravanankpm.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = gateWay\\gateWay.csproj
+		SccProjectName1 = gateWay
+		SccLocalPath1 = gateWay
+		SccProjectUniqueName2 = TicketNotifierAPI\\TicketNotifierAPI.csproj
+		SccProjectName2 = TicketNotifierAPI
+		SccLocalPath2 = TicketNotifierAPI
+		SccProjectUniqueName3 = TicketTrackerAPI\\TicketTrackerAPI.csproj
+		SccProjectName3 = TicketTrackerAPI
+		SccLocalPath3 = TicketTrackerAPI
+	EndGlobalSection
+EndGlobal

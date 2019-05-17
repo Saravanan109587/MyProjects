@@ -1,0 +1,1 @@
+D:\OProjects\TFS\TicketTracker\TicketTracker\TicketTracker.Receiver\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache

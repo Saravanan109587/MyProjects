@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TicketTrackerAPI</name>
+    </assembly>
+    <members>
+        <member name="M:TicketTrackerAPI.Controllers.TicketManagerController.GetTicketmaster">
+            <summary>
+            Get top 10 Tickets based on their priority
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TicketTrackerAPI.Controllers.TicketManagerController.AddNewTicket(TicketTrackerAPI.Models.Ticketmaster)">
+            <summary>
+            Used to add new Tickets to database To lets Notify the microservices
+            </summary>
+            <param name="ticketmaster"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TicketTrackerAPI.Controllers.TicketManagerController.DeleteTicket(System.Int32)">
+            <summary>
+            Delete Ticket from Db and notify Clients
+            </summary>
+            <param name="TicketId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TicketTrackerAPI.HUBS.TicketNotifierHub.OnConnectedAsync">
+            <summary>
+            To register a Client
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TicketTrackerAPI.HUBS.TicketNotifierHub.#ctor(Microsoft.AspNetCore.SignalR.IHubContext{TicketTrackerAPI.HUBS.TicketNotifierHub})">
+            <summary>
+            to Notify Clients
+            </summary>
+        </member>
+    </members>
+</doc>

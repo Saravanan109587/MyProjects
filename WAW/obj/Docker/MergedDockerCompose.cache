@@ -1,0 +1,22 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  waw:
+    build:
+      context: D:\OProjects\WAW
+      dockerfile: WAW\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: waw
+    ports:
+    - published: 65421
+      target: 80
+    - published: 44332
+      target: 443
+    volumes:
+    - C:\Users\Admin\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\Admin\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+version: '3.4'

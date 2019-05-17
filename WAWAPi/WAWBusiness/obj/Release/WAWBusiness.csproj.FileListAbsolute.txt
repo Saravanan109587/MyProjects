@@ -1,0 +1,11 @@
+D:\OProjects\WAWAPi\WAWBusiness\bin\Release\WAWBusiness.dll
+D:\OProjects\WAWAPi\WAWBusiness\bin\Release\WAWBusiness.pdb
+D:\OProjects\WAWAPi\WAWBusiness\bin\Release\Dapper.dll
+D:\OProjects\WAWAPi\WAWBusiness\bin\Release\Entities.dll
+D:\OProjects\WAWAPi\WAWBusiness\bin\Release\Entities.pdb
+D:\OProjects\WAWAPi\WAWBusiness\bin\Release\Dapper.xml
+D:\OProjects\WAWAPi\WAWBusiness\obj\Release\WAWBusiness.csprojAssemblyReference.cache
+D:\OProjects\WAWAPi\WAWBusiness\obj\Release\WAWBusiness.csproj.CoreCompileInputs.cache
+D:\OProjects\WAWAPi\WAWBusiness\obj\Release\WAWBusiness.csproj.CopyComplete
+D:\OProjects\WAWAPi\WAWBusiness\obj\Release\WAWBusiness.dll
+D:\OProjects\WAWAPi\WAWBusiness\obj\Release\WAWBusiness.pdb

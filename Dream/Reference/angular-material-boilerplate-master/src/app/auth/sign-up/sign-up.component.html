@@ -1,0 +1,22 @@
+<form [formGroup]="sign_up_form" fxLayout="column" fxLayoutAlign="center center">
+    <mat-form-field>
+        <input matInput formControlName="first_name" placeholder="First name">
+        <mat-error *ngIf="sign_up_form.controls.first_name.invalid">This field is required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput formControlName="last_name" placeholder="Last name">
+        <mat-error *ngIf="sign_up_form.controls.last_name.invalid">This field is required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput formControlName="email" placeholder="Email">
+        <mat-error *ngIf="sign_up_form.controls.email.invalid">This field is required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <input type="password" matInput formControlName="password" placeholder="Password">
+        <mat-error *ngIf="sign_up_form.controls.password.invalid">This field is required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <input type="password" matInput formControlName="repeat_password" placeholder="Repeat password">
+        <mat-error *ngIf="sign_up_form.controls.repeat_password.invalid">This field is required</mat-error>
+    </mat-form-field>
+</form>

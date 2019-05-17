@@ -1,0 +1,11 @@
+D:\OProjects\WAWAPi\WAWBusiness\bin\Debug\WAWBusiness.dll
+D:\OProjects\WAWAPi\WAWBusiness\bin\Debug\WAWBusiness.pdb
+D:\OProjects\WAWAPi\WAWBusiness\bin\Debug\Dapper.dll
+D:\OProjects\WAWAPi\WAWBusiness\bin\Debug\Entities.dll
+D:\OProjects\WAWAPi\WAWBusiness\bin\Debug\Entities.pdb
+D:\OProjects\WAWAPi\WAWBusiness\bin\Debug\Dapper.xml
+D:\OProjects\WAWAPi\WAWBusiness\obj\Debug\WAWBusiness.csprojAssemblyReference.cache
+D:\OProjects\WAWAPi\WAWBusiness\obj\Debug\WAWBusiness.csproj.CoreCompileInputs.cache
+D:\OProjects\WAWAPi\WAWBusiness\obj\Debug\WAWBusiness.csproj.CopyComplete
+D:\OProjects\WAWAPi\WAWBusiness\obj\Debug\WAWBusiness.dll
+D:\OProjects\WAWAPi\WAWBusiness\obj\Debug\WAWBusiness.pdb

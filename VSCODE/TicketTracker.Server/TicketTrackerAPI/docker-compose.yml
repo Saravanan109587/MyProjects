@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  tickettrackerapi:
+    image: ${DOCKER_REGISTRY}tickettrackerapi
+    build:
+      context: .
+      dockerfile: TicketTrackerAPI\Dockerfile

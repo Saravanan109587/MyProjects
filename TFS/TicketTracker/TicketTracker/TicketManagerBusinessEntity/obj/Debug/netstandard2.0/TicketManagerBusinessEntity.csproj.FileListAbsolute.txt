@@ -1,0 +1,9 @@
+D:\OProjects\TFS\TicketTracker\TicketTracker\TicketManagerBusinessEntity\bin\Debug\netstandard2.0\TicketManagerBusinessEntity.deps.json
+D:\OProjects\TFS\TicketTracker\TicketTracker\TicketManagerBusinessEntity\bin\Debug\netstandard2.0\TicketManagerBusinessEntity.dll
+D:\OProjects\TFS\TicketTracker\TicketTracker\TicketManagerBusinessEntity\bin\Debug\netstandard2.0\TicketManagerBusinessEntity.pdb
+D:\OProjects\TFS\TicketTracker\TicketTracker\TicketManagerBusinessEntity\obj\Debug\netstandard2.0\TicketManagerBusinessEntity.csprojAssemblyReference.cache
+D:\OProjects\TFS\TicketTracker\TicketTracker\TicketManagerBusinessEntity\obj\Debug\netstandard2.0\TicketManagerBusinessEntity.csproj.CoreCompileInputs.cache
+D:\OProjects\TFS\TicketTracker\TicketTracker\TicketManagerBusinessEntity\obj\Debug\netstandard2.0\TicketManagerBusinessEntity.AssemblyInfoInputs.cache
+D:\OProjects\TFS\TicketTracker\TicketTracker\TicketManagerBusinessEntity\obj\Debug\netstandard2.0\TicketManagerBusinessEntity.AssemblyInfo.cs
+D:\OProjects\TFS\TicketTracker\TicketTracker\TicketManagerBusinessEntity\obj\Debug\netstandard2.0\TicketManagerBusinessEntity.dll
+D:\OProjects\TFS\TicketTracker\TicketTracker\TicketManagerBusinessEntity\obj\Debug\netstandard2.0\TicketManagerBusinessEntity.pdb

@@ -1,0 +1,62 @@
+<section class="app-header">
+	<div class="app-header-inner" [ngClass]="{'bg-color-light': ['11','12','13','14','15','16','21'].indexOf(AppConfig.colorOption) >= 0,
+                 'bg-color-dark': AppConfig.colorOption === '31',
+                 'bg-color-primary': ['22','32'].indexOf(AppConfig.colorOption) >= 0,
+                 'bg-color-success': ['23','33'].indexOf(AppConfig.colorOption) >= 0,
+                 'bg-color-info': ['24','34'].indexOf(AppConfig.colorOption) >= 0,
+                 'bg-color-warning': ['25','35'].indexOf(AppConfig.colorOption) >= 0,
+                 'bg-color-danger': ['26','36'].indexOf(AppConfig.colorOption) >= 0}">
+
+		<div class="d-lg-none d-xl-none float-left">
+			<button mat-button appToggleOffCanvasNav class="md-button header-icon toggle-sidebar-btn">
+				<i class="material-icons">menu</i>
+			</button>
+		</div>
+
+
+		<div class="brand d-none d-lg-inline-block d-xl-inline-block">
+			<h2>
+				<a [routerLink]="['/']">{{AppConfig.brand}}</a>
+			</h2>
+		</div>
+
+		<div class="top-nav-left d-none d-lg-inline-block d-xl-inline-block">
+
+		</div>
+
+		<div class="top-nav-right">
+			<ul class="list-unstyled list-inline">
+				<li hidden class="list-inline-item">
+					<button mat-button class="md-button header-btn" appOpenSearchOverlay>
+						<i class="material-icons">search</i>
+					</button>
+				</li>
+				<li hidden class="list-inline-item">
+					<button mat-button class="md-button header-btn" [matMenuTriggerFor]="appNotification">
+						<i class="material-icons">notifications_none</i>
+						<span class="mdl-badge mdl-badge--overlap" data-badge="1"></span>
+					</button>
+					<mat-menu #appNotification="matMenu" x-position="after" y-position="below" overlapTrigger="false">
+						<mat-list dense>
+							<mat-list-item>
+								<mat-icon mat-list-avatar>schedule</mat-icon>
+								<h4 mat-line>New Schedule Added</h4>
+								<p mat-line class="text-muted">5 minutes ago</p>
+							</mat-list-item>
+						</mat-list>
+					</mat-menu>
+				</li>
+				<li>
+					<button mat-button class="md-button header-btn" [matMenuTriggerFor]="appUser">
+						<i class="material-icons">perm_identity</i>
+					</button>
+					<mat-menu #appUser="matMenu" x-position="after" y-position="below" overlapTrigger="false">
+						<button mat-menu-item (click)="onChangePasswordClick()">Change Password</button>
+						<button mat-menu-item (click)="onLogoutClick()">Logout</button>
+					</mat-menu>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</section>

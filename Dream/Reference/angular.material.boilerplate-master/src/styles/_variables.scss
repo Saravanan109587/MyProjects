@@ -1,0 +1,13 @@
+// Global variables
+@import 'global/variables-bootstrap';
+@import 'global/variables-extra';
+@import 'global/variables-material-design-lite';
+
+// App variables
+@import 'app/variables-app';
+@import 'app/features/internal/layout/variables-layout';
+
+// Theme variables
+@import 'themes/variables-theme';
+
+@import '../../node_modules/bootstrap/scss/mixins';

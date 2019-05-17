@@ -1,0 +1,6 @@
+D:\OProjects\Entities\bin\Debug\Entities.dll
+D:\OProjects\Entities\bin\Debug\Entities.pdb
+D:\OProjects\Entities\obj\Debug\WAWEntities.csprojAssemblyReference.cache
+D:\OProjects\Entities\obj\Debug\WAWEntities.csproj.CoreCompileInputs.cache
+D:\OProjects\Entities\obj\Debug\Entities.dll
+D:\OProjects\Entities\obj\Debug\Entities.pdb

@@ -1,0 +1,14 @@
+{
+    "apiservice": "http://localhost:40012/api/",
+    "defaultImagepath": "../../assets/defuldImg.png",
+    "showLoadingBar": false,
+    "ActiveCandidate": {
+        "Name": "",
+        "Email": ""
+    },
+    "ValidAdmin": {
+        "username": "",
+        "Email": ""
+    },
+    "errorMsg": "Something went wrong while processing your request please comtact an administrator"
+}

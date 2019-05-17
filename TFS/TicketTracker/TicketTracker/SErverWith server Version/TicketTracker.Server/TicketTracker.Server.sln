@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketTrackerAPI", "TicketTrackerAPI\TicketTrackerAPI.csproj", "{CA5A1269-C6C9-43F1-90D3-BC979BF15317}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packages", "packages", "{F6D849ED-82AA-4879-9585-1A4D6A9DC85B}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBus\bin\Debug\netstandard2.0\EventBus.dll = C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBus\bin\Debug\netstandard2.0\EventBus.dll
+		C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusRabbitMQ\bin\Debug\netstandard2.0\EventBus.dll = C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusRabbitMQ\bin\Debug\netstandard2.0\EventBus.dll
+		C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusRabbitMQ\bin\Debug\netstandard2.0\EventBusRabbitMQ.dll = C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusRabbitMQ\bin\Debug\netstandard2.0\EventBusRabbitMQ.dll
+		C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\bin\Debug\netstandard2.0\EventBusServiceBus.dll = C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\bin\Debug\netstandard2.0\EventBusServiceBus.dll
+	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{CD383360-3662-4BCE-8AB5-90D504DE3C55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TicketManagerEntity", "TicketManagerEntity", "{96DF8372-852F-455A-B651-620E0F244A73}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketManagerBusinessEntity", "..\TicketManagerBusinessEntity\TicketManagerBusinessEntity.csproj", "{FA951D70-01FB-42E8-AB9D-3FD20D2B78D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConnectionBloocks", "ConnectionBloocks", "{914A392B-933C-4AD9-ADFA-1B7859BC45ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus", "C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBus\EventBus.csproj", "{D2E2B44A-1569-48CA-970C-53D0558F1C09}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBusRabbitMQ", "C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusRabbitMQ\EventBusRabbitMQ.csproj", "{87680B07-8E2C-4BC6-B095-DED4D911B769}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBusServiceBus", "C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBusServiceBus\EventBusServiceBus.csproj", "{7688E3CC-91B4-4BEE-A89F-DCDFC2A9D760}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA5A1269-C6C9-43F1-90D3-BC979BF15317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA5A1269-C6C9-43F1-90D3-BC979BF15317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA5A1269-C6C9-43F1-90D3-BC979BF15317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA5A1269-C6C9-43F1-90D3-BC979BF15317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD383360-3662-4BCE-8AB5-90D504DE3C55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD383360-3662-4BCE-8AB5-90D504DE3C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD383360-3662-4BCE-8AB5-90D504DE3C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD383360-3662-4BCE-8AB5-90D504DE3C55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA951D70-01FB-42E8-AB9D-3FD20D2B78D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA951D70-01FB-42E8-AB9D-3FD20D2B78D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA951D70-01FB-42E8-AB9D-3FD20D2B78D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA951D70-01FB-42E8-AB9D-3FD20D2B78D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2E2B44A-1569-48CA-970C-53D0558F1C09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2E2B44A-1569-48CA-970C-53D0558F1C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2E2B44A-1569-48CA-970C-53D0558F1C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2E2B44A-1569-48CA-970C-53D0558F1C09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87680B07-8E2C-4BC6-B095-DED4D911B769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87680B07-8E2C-4BC6-B095-DED4D911B769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87680B07-8E2C-4BC6-B095-DED4D911B769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87680B07-8E2C-4BC6-B095-DED4D911B769}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7688E3CC-91B4-4BEE-A89F-DCDFC2A9D760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7688E3CC-91B4-4BEE-A89F-DCDFC2A9D760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7688E3CC-91B4-4BEE-A89F-DCDFC2A9D760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7688E3CC-91B4-4BEE-A89F-DCDFC2A9D760}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA951D70-01FB-42E8-AB9D-3FD20D2B78D6} = {96DF8372-852F-455A-B651-620E0F244A73}
+		{D2E2B44A-1569-48CA-970C-53D0558F1C09} = {914A392B-933C-4AD9-ADFA-1B7859BC45ED}
+		{87680B07-8E2C-4BC6-B095-DED4D911B769} = {914A392B-933C-4AD9-ADFA-1B7859BC45ED}
+		{7688E3CC-91B4-4BEE-A89F-DCDFC2A9D760} = {914A392B-933C-4AD9-ADFA-1B7859BC45ED}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D8AC496-78DB-47BF-B559-22500E6AF6B8}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://npsaravanankpm.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TicketTrackerAPI\\TicketTrackerAPI.csproj
+		SccProjectName1 = TicketTrackerAPI
+		SccLocalPath1 = TicketTrackerAPI
+		SccProjectUniqueName2 = ..\\TicketManagerBusinessEntity\\TicketManagerBusinessEntity.csproj
+		SccProjectTopLevelParentUniqueName2 = TicketTracker.Server.sln
+		SccProjectName2 = ../TicketManagerBusinessEntity
+		SccLocalPath2 = ..\\TicketManagerBusinessEntity
+	EndGlobalSection
+EndGlobal

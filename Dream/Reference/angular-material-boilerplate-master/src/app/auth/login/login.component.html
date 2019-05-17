@@ -1,0 +1,10 @@
+<form [formGroup]="login_form" fxLayout="column" fxLayoutAlign="center center">
+    <mat-form-field>
+        <input matInput formControlName="email" placeholder="Email">
+        <mat-error *ngIf="login_form.controls.email.invalid">This field is required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput formControlName="password" placeholder="Password">
+        <mat-error *ngIf="login_form.controls.password.invalid">This field is required</mat-error>
+    </mat-form-field>
+</form>

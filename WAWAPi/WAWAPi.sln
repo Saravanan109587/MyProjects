@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WAWAPi", "WAWAPi\WAWAPi.csproj", "{5E68A1E9-DEF3-47DE-B123-F96A2BC405BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAWEntities", "..\Entities\WAWEntities.csproj", "{A493FB7C-5E0B-480C-84C7-7468C2BA62FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAWBusiness", "WAWBusiness\WAWBusiness.csproj", "{E843453B-B9FF-4E49-8843-F8C17263B67F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E68A1E9-DEF3-47DE-B123-F96A2BC405BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E68A1E9-DEF3-47DE-B123-F96A2BC405BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E68A1E9-DEF3-47DE-B123-F96A2BC405BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E68A1E9-DEF3-47DE-B123-F96A2BC405BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A493FB7C-5E0B-480C-84C7-7468C2BA62FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A493FB7C-5E0B-480C-84C7-7468C2BA62FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A493FB7C-5E0B-480C-84C7-7468C2BA62FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A493FB7C-5E0B-480C-84C7-7468C2BA62FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E843453B-B9FF-4E49-8843-F8C17263B67F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E843453B-B9FF-4E49-8843-F8C17263B67F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E843453B-B9FF-4E49-8843-F8C17263B67F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E843453B-B9FF-4E49-8843-F8C17263B67F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4472DF0C-C346-43BF-94C2-13B5792B6AC1}
+	EndGlobalSection
+EndGlobal

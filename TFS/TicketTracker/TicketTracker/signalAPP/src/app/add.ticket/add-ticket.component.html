@@ -1,0 +1,43 @@
+
+
+
+
+<div class="container">
+       <h1 style="margin-left: 30%">Add new Ticket</h1>
+        <form ngForm="TicketForm"> 
+                <div class="col-md-12 col-md-offset-3">
+
+                        <div class="form-group">
+                                <label for="name">Client Name</label>
+                                <input type="text" class="form-control" name="ClientName"  style="width: 400px" [(ngModel)]="TicketDetails.ClientName"  required>
+                        </div>
+
+                        <div class="form-group">
+                                <label for="alterEgo">Module</label>
+                                <input type="text" class="form-control" name="Module" style="width: 400px" [(ngModel)]="TicketDetails.Module">
+                        </div>
+                        <div class="form-group">
+                                <label for="alterEgo">Description</label>
+                                <input type="text" class="form-control" name="Description" style="width: 400px" [(ngModel)]="TicketDetails.Description">
+                        </div>
+                        <div class="form-group">
+                                <label for="alterEgo">Short notes</label>
+                                <input type="text" class="form-control" name="ShortNotes"  style="width: 400px" [(ngModel)]="TicketDetails.ShortNotes">
+                        </div>
+                        <div class="form-group">
+                                        <label for="alterEgo">Developer Name</label>
+                                        <input type="text" class="form-control" name="ShortNotes" style="width: 400px"  [(ngModel)]="TicketDetails.DeveloperName">
+                                </div>
+                        <div class="form-group">
+                                <label for="alterEgo">Priority</label>
+                                <input type="number" class="form-control" name="Priority" style="width: 400px" [(ngModel)]="TicketDetails.Priority">
+                        </div>
+                </div>
+
+
+                <button type="submit" style="width: 150px;margin-left: 50%"class="btn btn-success" (click)="AddnewTicket(TicketDetails)">Submit</button>
+
+        </form>
+</div>
+
+ 

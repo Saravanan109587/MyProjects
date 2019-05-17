@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  trackerserver:
+    image: ${DOCKER_REGISTRY}trackerserver
+    build:
+      context: .
+      dockerfile: TrackerServer\Dockerfile

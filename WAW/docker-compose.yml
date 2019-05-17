@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  waw:
+    image: ${DOCKER_REGISTRY}waw
+    build:
+      context: .
+      dockerfile: WAW\Dockerfile

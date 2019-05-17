@@ -1,0 +1,6 @@
+<div class="app-login-page-main-container">
+	<app-login-form (submitted)="onSubmit($event)" [pending]="pending$ | async" [errorMessage]="error$ | async"></app-login-form>
+	<div class="app-login-page-version-container">
+		<p>Version: {{version}}</p>
+	</div>
+</div>

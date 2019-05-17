@@ -1,0 +1,40 @@
+<div class="app-login-main-container">
+	<mat-card class="app-login-card">
+
+		<div class="app-login-header">
+			<div class="app-login-logo-container">
+				<app-logo></app-logo>
+			</div>
+		</div>
+
+		<mat-card-content class="app-login-card-content">
+			<form class="app-login-form" [formGroup]="form" (ngSubmit)="submit()">
+				<mat-form-field class="app-login-input">
+					<input matInput formControlName="username" placeholder="Username / Email Address" required>
+				</mat-form-field>
+				<mat-form-field class="app-login-input">
+					<input matInput formControlName="password" placeholder="Password" type="password" required>
+				</mat-form-field>
+
+				<p *ngIf="errorMessage" class="app-login-error">
+					{{errorMessage}}
+				</p>
+
+				<p>
+					<button class="app-login-button" type="submit" mat-raised-button color="primary">
+						LOGIN
+					</button>
+				</p>
+
+				<div class="app-login-form-forgot-password">
+					<a [routerLink]="['/forgot-password']">Forgot your password?</a>
+				</div>
+			</form>
+		</mat-card-content>
+
+		<div class="app-login-additional-info">
+			<a [routerLink]="['/sign-up']">Don't have an account yet? Sign Up</a>
+		</div>
+
+	</mat-card>
+</div>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Xamarin.Demo"
+             x:Class="Xamarin.Demo.MainPage">
+
+    <StackLayout Orientation="Horizontal">
+        <StackLayout Margin="20">
+            <StackLayout Orientation="Horizontal">
+
+                <Entry x:Name="url"   HeightRequest="40" WidthRequest="50"/>
+                <Button Text="GO" HorizontalOptions="EndAndExpand" Clicked="OnGoButtonClicked" />
+                <Button Text="Back" HorizontalOptions="StartAndExpand" Clicked="OnBackButtonClicked" />
+                <Button Text="Forward" HorizontalOptions="EndAndExpand" Clicked="OnForwardButtonClicked" />
+
+            </StackLayout>
+            <!-- WebView needs to be given height and width request within layouts to render. -->
+            <WebView x:Name="webView"  WidthRequest="1000" HeightRequest="1000" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

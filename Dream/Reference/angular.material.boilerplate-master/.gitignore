@@ -1,0 +1,40 @@
+# compiled output
+/dist
+/tmp
+/out-tsc
+/build
+/Release
+/dll
+.tmp
+documentation/*.html
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/typings
+
+# Logs
+logs
+*.log
+npm-debug.log
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db

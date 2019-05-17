@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ticketnotifierapi:
+    image: ${DOCKER_REGISTRY}ticketreceiverapi
+    build:
+      context: .
+      dockerfile: TicketNotifierAPI\Dockerfile

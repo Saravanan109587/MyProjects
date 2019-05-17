@@ -1,0 +1,40 @@
+ <div class="container"  style="padding: 0;">
+     <div class="row col-xs-12"><br
+        />
+        <br/>
+      <div class="col-xs-offset-3 col-xs-7 panel panel-primary panel-LogIn" style="padding: 0;">
+         <div class="panel-heading panel-heading-LogIn ">
+          Log In
+         </div>
+         <div class="panel-body">
+           <form class="col-xs-offset-3" #formDir="ngForm">
+               <img class="img" src="../../assets/kmit_solution_logo.jpg" >
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-user text-blue"></span>
+                        </span>
+                        <input class="input-30 form-control form-control2" placeholder="User Name" required autofocus name="userame" type="text" [(ngModel)]="username">
+                    </div>
+                    <br/>
+                    <div class="input-group">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-envelope  text-blue"></span>
+                            </span>
+                            <input class="input-30 form-control form-control2" (blur)="validateEmail=true" (focus)="validateEmail=false" placeholder="Email Id" required autofocus name="email" type="email" email [(ngModel)]="Password" #userEamil=ngModel>           
+
+                            <h5 style="color:red" *ngIf="userEamil.errors?.email && validateEmail">
+                                    Enter Valid emailId
+                            </h5>
+                       </div>
+                      
+                     <br/>
+                    
+                    <div class="input-group col-xs-offset-2"> 
+                            <button  class="btn  btn-lg btn-primary"  [ngClass]="{'btn-danger':formDir.invalid}" type="submit" [disabled]=formDir.invalid (click)=validateUser();>Log In</button>
+                    </div>
+           </form>
+         </div>
+      </div>
+     </div>
+
+ </div>

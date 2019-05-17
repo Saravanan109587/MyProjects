@@ -1,0 +1,9 @@
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBus\bin\Release\netstandard2.0\EventBus.deps.json
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBus\bin\Release\netstandard2.0\EventBus.dll
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBus\bin\Release\netstandard2.0\EventBus.pdb
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBus\obj\Release\netstandard2.0\EventBus.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBus\obj\Release\netstandard2.0\EventBus.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBus\obj\Release\netstandard2.0\EventBus.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBus\obj\Release\netstandard2.0\EventBus.AssemblyInfo.cs
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBus\obj\Release\netstandard2.0\EventBus.dll
+C:\Users\Admin\Desktop\MS\eShopOnContainers-dev\src\BuildingBlocks\EventBus\EventBus\obj\Release\netstandard2.0\EventBus.pdb

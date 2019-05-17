@@ -1,0 +1,55 @@
+
+
+<h1 style="margin-left: 40%">Ticket List</h1>
+<div class="col-xs-12 col-md-12 col-lg-12" *ngIf="TicketList   && TicketList.length>0"
+  style="margin-top: -16px;">
+  <table class="table table-striped">
+          <thead class="tableHead">
+                  <tr>
+                          <td> Client Name </td>
+                          <td> Description</td>
+                          <td> Short Notes </td>
+                          <td>Developer</td>
+                          <td>Priority </td>
+                          <td>Module</td>
+                          <td>Edit</td>
+                          <td>Delete</td>
+                  </tr>
+          </thead>
+          <tr *ngFor="let data of TicketList" style="height: 100px; ">
+                  <td>
+                          {{data.clientName}}
+                  </td>
+                  <td>
+                          {{data.description}}
+                  </td>
+                  <td>
+                          {{data.shortNotes}}
+                  </td>
+                  <td>
+                          {{data.developerName}}
+                  </td>
+                  <td>
+                          {{data.priority}}
+                  </td>
+
+                  <td>
+                          {{data.module}}
+                  </td>      
+                  
+                  <td>
+                       <button class="btn-primary  glyphicon glyphicon-pencil zoom" (click)="EditTicket(data.ticketId);"></button>
+                </td>  
+                <td>
+                        <button class="btn-danger  glyphicon glyphicon-trash zoom" (click)="DeleteTicket(data.ticketId);"></button>
+                </td>  
+          </tr>
+
+
+  </table>
+   
+</div>
+
+<div *ngIf="!TicketList   || TicketList.length == 0">
+<h1 style="margin-left: 30%">No Tickets Found</h1>
+</div>

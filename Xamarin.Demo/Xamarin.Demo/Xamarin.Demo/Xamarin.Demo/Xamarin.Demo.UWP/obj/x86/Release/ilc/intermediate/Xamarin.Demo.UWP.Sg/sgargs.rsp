@@ -1,0 +1,12 @@
+/ref:"D:\OProjects\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed"
+/ref:"C:\Users\Admin\.nuget\packages\microsoft.net.native.sharedlibrary-x86\2.0.0\tools\SharedLibrary\ret\AnalysisILToc"
+/ref:"D:\OProjects\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed"
+/ref:"D:\OProjects\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo.UWP\obj\x86\Release\ilc\in\\"
+/ref:"C:\Users\Admin\.nuget\packages\microsoft.net.native.compiler\2.0.0\tools\x86\ilc\lib\Private\\"
+/ref:"D:\OProjects\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo.UWP\obj\x86\Release\ilc\in"
+/ref:"D:\OProjects\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo.UWP\obj\x86\Release\ilc\in\WinMetadata"
+/ca:System.Private.CoreLib
+/cscpath:"C:\Users\Admin\.nuget\packages\microsoft.net.native.compiler\2.0.0\tools\csc"
+/out:"D:\OProjects\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo.UWP\obj\x86\Release\ilc\intermediate\SgGenerated\\"
+/int:"D:\OProjects\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo.UWP\obj\x86\Release\ilc\intermediate\Xamarin.Demo.UWP.Sg"
+"@D:\OProjects\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo\Xamarin.Demo.UWP\obj\x86\Release\ilc\intermediate\Xamarin.Demo.UWP.Sg\ComputedSerializationInput.txt"
